@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvwidget"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        app:cardBackgroundColor="#EDEDED"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|bottom"
+            android:paddingLeft="20dp"
+            android:text="Son Goku"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|top"
+            android:paddingLeft="20dp"
+            android:text="Hey,"
+            android:textColor="#9E9E9E"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/toolbarperson"
+            android:layout_gravity="right|center_vertical"
+            android:paddingRight="20dp"/>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="2dp"
+        android:background="#F0F0F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvwidget"
+        app:layout_constraintVertical_bias="0.013" />
+</androidx.constraintlayout.widget.ConstraintLayout>

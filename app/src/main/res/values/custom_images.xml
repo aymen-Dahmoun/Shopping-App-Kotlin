@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="roundedCorners" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamilyBottomLeft"> rounded </item>
+
+    </style>
+    <style name="circularImage" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize"> 50% </item>
+
+    </style>
+
+    <dimen name="item_spacing">12dp</dimen>
+
+</resources>

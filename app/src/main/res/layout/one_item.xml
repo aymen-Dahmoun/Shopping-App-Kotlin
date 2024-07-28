@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:cardBackgroundColor="#FAFAFA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/llitemview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:foregroundGravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/productImage"
+                android:layout_width="160dp"
+                android:layout_height="194dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lv"
+                app:shapeAppearanceOverlay="@style/roundedCorners" />
+
+
+            <TextView
+                android:id="@+id/tvproducttitle"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:padding="8dp"
+                android:gravity="left|top"
+                android:text="Product title"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvproductdescription"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="8dp"
+                android:text="Product description"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+    </LinearLayout>
